@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Green</string>
+
+    <string name="lvl1">lvl 1</string>
+    <string name="lvl2">lvl 2</string>
+    <string name="lvl3">lvl 3</string>
+    <string name="lvl4">lvl 4</string>
+    <string name="lvl5">lvl 5</string>
+    <string name="lvl6">lvl 6</string>
+    <string name="lvl7">lvl 7</string>
+    <string name="lvl8">lvl 8</string>
+    <string name="lvl9">lvl 9</string>
+    <string name="lvl10">lvl 10</string>
+
+    <string name="author">Created by Omar Guzman</string>
+
+    <string name="winner">YOU WIN!</string>
+    <string name="menu">MENU</string>
+    <string name="redu">REDO</string>
+
+
 </resources>

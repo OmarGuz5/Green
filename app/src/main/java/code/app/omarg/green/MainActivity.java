@@ -2,14 +2,12 @@ package code.app.omarg.green;
 
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import code.app.omarg.green.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
     boolean isGreen[]= {true,false,true,false,false,false,true,false,true};
-    TextView turns,won,editor;
+    TextView turns, editor;
     int numOfTurns,lvl;
     int numEditor[] = {1,1,7,6,5,2,5,8,11,9};
     Boolean lvlComplete[] = {false,false,false,false,false,false,false,false,false,false};
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         b8 = findViewById(R.id.b8);
         b9 = findViewById(R.id.b9);
         turns = findViewById(R.id.clicks);
-        won = findViewById(R.id.won);
         editor = findViewById(R.id.editor);
         numOfTurns=0;
         lvl = 1;
@@ -73,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         numOfTurns=0;
         String text = "Number of Clicks: " + numOfTurns;
         turns.setText(text);
-        won.setText("");
     }
 
     private void won() {
@@ -220,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
         won();
     }
     private void turns() {
-        String text = "Number of Clicks: " + numOfTurns;;
+        String text = "Number of Clicks: " + numOfTurns;
         turns.setText(text);
     }
 }

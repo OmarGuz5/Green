@@ -1,12 +1,10 @@
 package code.app.omarg.green;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
-import code.app.omarg.green.R;
 
 public class LevelCompleteActivity extends AppCompatActivity {
 
@@ -22,7 +20,8 @@ public class LevelCompleteActivity extends AppCompatActivity {
 
         if(lvl==10) {
             //write stay tuned
-            textview.setText("Stay tuned for more levels in the neat future!");
+            text = "Stay tuned for more levels in the near future!";
+            textview.setText(text);
         }
 
     }
