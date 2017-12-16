@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="code.app.omarg.green">
 
+    <uses-sdk android:targetSdkVersion="27" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/app_icon"
@@ -25,7 +27,9 @@
             android:screenOrientation="portrait" />
         <activity android:name="code.app.omarg.green.GameMenuActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="code.app.omarg.green.LevelCompleteActivity"></activity>
+        <activity
+            android:name="code.app.omarg.green.LevelCompleteActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
