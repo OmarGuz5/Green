@@ -14,36 +14,30 @@ public class GameMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_menu);
 
-        Integer lvl = 0;
+        Integer lvl = -1;
 
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
             lvl = extras.getInt("lvl");
         }
-        if(lvl == 0) {
-            SharedPreferences sharedPref = getSharedPreferences("lvlCompleted", 0);
-            SharedPreferences.Editor editor = sharedPref.edit();
-            editor.clear();      //its clear all data.
-            editor.apply();  //Don't forgot to commit  SharedPreferences.
 
+        SharedPreferences sharedPref = getSharedPreferences("lvlCompleted", 0);
+        int defValue = 0;
+        Integer highestLvl;
+        highestLvl = sharedPref.getInt("highestLvl", defValue);
+        if (lvl > highestLvl) {
+            //now get Editor
+            SharedPreferences.Editor editor = sharedPref.edit();
+            //put your value
+            editor.putInt("highestLvl", lvl);
+            //commits your edits
+            editor.apply();
         }
-        if(lvl!=0) {
-            SharedPreferences sharedPref = getSharedPreferences("lvlCompleted", 0);
-            int defValue = 0;
-            Integer highestLvl;
-            highestLvl = sharedPref.getInt("highestLvl",defValue);
-            if(lvl > highestLvl) {
-                //now get Editor
-                SharedPreferences.Editor editor = sharedPref.edit();
-                //put your value
-                editor.putInt("highestLvl", lvl);
-                //commits your edits
-                editor.apply();
-            }
-            sharedPref = getSharedPreferences("lvlCompleted", 0);
-            setButtonsToVisible(sharedPref.getInt("highestLvl",0));
-        }
+
+        sharedPref = getSharedPreferences("lvlCompleted", 0);
+        setButtonsToVisible(sharedPref.getInt("highestLvl", 0));
     }
+
 
     private void setButtonsToVisible(int lvl) {
         Button b2 = findViewById(R.id.lvl2);
