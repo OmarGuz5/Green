@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.omarg.green.code.example.omarg.green.GameMenuActivity">
+    tools:context="code.app.omarg.green.GameMenuActivity">
 
 
     <Button
@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:onClick="lvl2"
         android:text="Lvl 2"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:onClick="lvl3"
         android:text="Lvl 3"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -46,11 +48,12 @@
         app:layout_constraintVertical_bias="0.21" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/lvl4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl4"
         android:text="Lvl 4"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -59,11 +62,12 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/lvl5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl5"
         android:text="Lvl 5"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -71,11 +75,12 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/lvl6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl6"
         android:text="Lvl 6"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -84,11 +89,12 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/lvl7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl7"
         android:text="Lvl 7"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -97,11 +103,12 @@
         app:layout_constraintVertical_bias="0.587" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/lvl8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl8"
         android:text="lvl 8"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -109,11 +116,12 @@
         app:layout_constraintVertical_bias="0.587" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/lvl9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl9"
         android:text="lvl 9"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -122,11 +130,12 @@
         app:layout_constraintVertical_bias="0.587" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/lvl10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="lvl10"
         android:text="lvl 10"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

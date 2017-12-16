@@ -2,6 +2,7 @@ package code.app.omarg.green;
 
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -77,9 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void won() {
         if(allGreen()) {
-            String text = "YOU WIN!";
-            won.setText(text);
-            won.setTextColor(0xFF006600);
             b1.setEnabled(false);
             b2.setEnabled(false);
             b3.setEnabled(false);
@@ -89,6 +87,16 @@ public class MainActivity extends AppCompatActivity {
             b7.setEnabled(false);
             b8.setEnabled(false);
             b9.setEnabled(false);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(getApplicationContext(),LevelCompleteActivity.class);
+                    intent.putExtra("lvl",lvl);
+                    startActivity(intent);
+                }
+            }, 200);
+
+
         }
     }
 
